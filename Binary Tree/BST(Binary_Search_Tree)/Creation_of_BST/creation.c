@@ -49,7 +49,7 @@ void Inorder(struct node* root){
         return ;
     }
     Inorder(root->left);
-    printf("%d \t", root->data);
+    printf("%d \t", root->data); 
     Inorder(root->right);
 }
 

@@ -1,7 +1,8 @@
 {
     "files.associations": {
         "string.h": "c",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "ios": "c"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }

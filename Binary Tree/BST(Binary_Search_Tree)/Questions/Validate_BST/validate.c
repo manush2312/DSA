@@ -55,6 +55,7 @@ void Inorder(struct node *root){
     Inorder(root->right);
 }
 
+//function to check whether a given tree is BST or not.. 
 int isBST(struct node* root, int min, int max){
     
     //base case..

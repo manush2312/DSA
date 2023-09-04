@@ -15,7 +15,7 @@ void insert(struct node** head, int data){
     if(*head == NULL){
             *head = newnode;
     }else{
-        struct node *temp = head;
+        struct node *temp = *head;
         while(temp->next != NULL){
             temp = temp->next;
         }
@@ -52,10 +52,10 @@ void print(struct node* head){
 int main(){
     struct node* head = NULL;
 
-    insert(head,2);
-    insert(head,32);
-    insert(head,33);
-    insert(head,22);
+    insert(&head,2);
+    insert(&head,32);
+    insert(&head,33);
+    insert(&head,22);
     
     print(head);
 
