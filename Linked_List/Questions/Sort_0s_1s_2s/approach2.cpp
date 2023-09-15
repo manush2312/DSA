@@ -66,9 +66,9 @@ Node * sortList(Node *&head){
     twoTail->next = NULL;
 
     head = zeroHead->next;
-    delete zeroHead;
-    delete oneHead;
-    delete twoHead;
+    delete zeroHead; // deleting the dummy node
+    delete oneHead;  // deleting the dummy node
+    delete twoHead;  // deleting the dummy node
 
 
     return head;
