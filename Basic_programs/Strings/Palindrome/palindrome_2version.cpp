@@ -28,12 +28,26 @@ int checkPalindrome(char ch[], int n){
     int s = 0, e = n-1;
 
     while(s <= e){
-        if( toLowercase(ch[s]) != toLowercase(ch[e]) ){
-            return 0;
-        }else{
+        // if( toLowercase(ch[s]) != toLowercase(ch[e]) ){
+        //     return 0;
+        // }else{
+        //     s++;
+        //     e--;
+        // }
+
+        if(!(ch[s] >= 'a' && ch[s] <= 'z')){
             s++;
+        }
+        else if(!(ch[e] >= 'a' && ch[e] <= 'z')){
             e--;
         }
+        else if(ch[s] == ch[e]){
+            s++;
+            e--;
+        }else{
+            return 0;
+        }
+
     }
     return 1;
 }
